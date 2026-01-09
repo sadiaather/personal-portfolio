@@ -18,11 +18,24 @@
 
 }
 .image{
-    /* transform-style: preserve-3d;
-    animation: 3s ease-in-out 0s infinite alternate none running move3d; */
-    animation:3s ease-in-out 0s infinite
+   transform: rotate3d();
 }
 .card{
-    box-shadow:  rgb(255, 115, 0) 5px 5px 20px; 
+    box-shadow:  rgb(255, 115, 8) 5px 5px 20px; 
     text-decoration: none;
+    border-radius: 30px;
 }
+.brd{
+    height: 500px;
+    width: 1200px;
+}
+.text{
+    font-size: xx-large;
+    font-weight: bolder;
+    color: crimson;
+    margin-left: 150px;
+     box-shadow: rgb(255, 67, 76) 3px 3px 20px;
+     
+     }
+
+     

@@ -47,6 +47,13 @@ const TIMELINE_DATA = [
     subtitle: ' Govt. Degree Girls College',
     date: '2007',
     
+  },
+    {
+    type: 'education',
+    title: 'mern stack developer',
+    subtitle: ' smit(sylani mass institute of technology)',
+    date: '2026',
+    
   }
 ];
 

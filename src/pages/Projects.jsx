@@ -26,16 +26,16 @@ const PROJECTS_DATA = [
     subtitle: 'Real-Time changes & Collaboration Platform',
     category: ['React, JavaScript, Todo App, Task Management, CRUD Operations, Responsive Design, Local Storage, React Hooks, UI/UX, Productivity, Frontend Development'],
     description: "A responsive Todo App built with React that helps users create, organize, update, and manage daily tasks efficiently. It features task creation, editing, deletion, and completion tracking with a clean, user-friendly interface to improve productivity.",
-    tech: ['React', 'Node.js', 'Express.js', 'MongoDB', 'Socket.io', 'JWT', 'CSS Modules'],
+    tech: ['React', 'react-router-dom', 'JavaScript', 'CSS Flexbox', 'Local Storage'],
     
     github: 'https://sadiaather.github.io/to-do-task/',
     demo: '#',
-    challenges: 'Implementing real-time updates and ensuring data consistency across multiple clients while maintaining a responsive UI.',
-    solutions: 'Utilized Socket.io for real-time communication between clients and server, and implemented optimistic UI updates to enhance user experience.',
+    challenges: 'Implementing real-time updates and ensuring data persistence across sessions while maintaining a responsive and intuitive user interface.',
+    solutions: 'Implemented real-time updates using React state management and local storage to persist tasks across sessions. Designed a collaborative interface that allows multiple users to interact with the task list simultaneously.',
     highlights: [
-      'Implemented full JWT-based authentication with cookie storage.',
-      'Designed relational-like models in MongoDB utilizing mongoose population.',
-      'Created a drag-and-drop kanban interface using pure React state logic.'
+      
+   
+      'Created a beautiful interface using  React state logic.'
     ],
     schema: `const GroupSchema = new mongoose.Schema({
   name: { type: String, required: true },
@@ -52,15 +52,73 @@ const PROJECTS_DATA = [
   }]
 });`
   },
-  {
-    id: 'counter app',
+  {id: 'portfolio',
+    title: 'Portfolio Website',
+    subtitle: 'Curated showcase of my projects and skills',
+    category: ['HTML', 'CSS', 'JavaScript', 'Frontend'],
+    description: 'A customer support ticketing system that allows users to submit support requests, track their status, and communicate with support agents. Built with React for the frontend and Node.js/Express for the backend, with MongoDB for data storage.',
+    tech: ['HTML', 'CSS', 'JavaScript', 'Frontend Development'],
+    subtitle: 'A curated showcase of my projects and skills.',
+    challenges: 'Designing a system that efficiently aggregates and displays my projects and skills while maintaining performance and responsiveness.',
+    solutions: 'Utilized HTML, CSS, and JavaScript aggregation pipelines ($group, $project, $sort)and showcase my projects.',    
+   
+    
+    github:'https://sadiaather.github.io/code-alpha-portfolio/',
+    demo: '#' ,
+    highlights: [
+      
+      'Fully responsive UI styled with CSS Grid and modern custom variables.'
+      
+    ],
+    schema: `// Express routing for Stripe Checkout Session
+router.post('/checkout', authMiddleware, async (req, res) => {
+  const session = await stripe.checkout.sessions.create({
+    payment_method_types: ['card'],
+    line_items: req.body.items,
+    success_url: '\${process.env.CLIENT_URL}/success?session_id={CHECKOUT_SESSION_ID}',
+    cancel_url: '\${process.env.CLIENT_URL}/cart',
+  });
+  res.json({ id: session.id });
+});`
+  },
+  { id: 'counter app',
     title: 'Counter App',
     subtitle: 'Simple Interactive Counter Application',
-    category: ['React', 'JavaScript', 'Frontend'],
+     category: ['React', 'JavaScript', 'Frontend'],
     description: 'A simple and responsive Counter App built with React that allows users to increment, decrement, and reset the counter value. The project demonstrates React state management using Hooks (useState) and provides a clean, user-friendly interface.',
     tech: ['React, JavaScript,  Frontend Development'],
+   
+    challenges: 'Designing a system that efficiently increases or decreases counter values while maintaining performance and responsiveness.'                                                                                                                                          ,
+    solutions: 'Utilized React state management with useState to handle counter value changes and implemented event handlers for incrementing, decrementing, and resetting the counter.',
+    github: 'https://counter-app-beta-eight-30.vercel.app/',
+    demo: '#',
+    highlights: [
+      'Dynamic charts powered by Chart.js reacting to user inputs.',
+      'Mobile-first design with responsive sliding drawers for inputs.'
+    ],
+    schema: `//  Aggregation Pipeline for Weekly counter.aggregate([
+  { $match: { userId: mongoose.Types.ObjectId(userId), date: { $gte: startDate } } },
+  { $group: {
+      _id: { $dayOfWeek: "$date" },
+      totalCalories: { $sum: "$caloriesBurned" },
+      avgDuration: { $avg: "$durationMinutes" }
+    }
+  },
+  { $sort: { "_id": 1 } }
+])`
+  },
+  {id: 'support flow desk',
+    title: 'Support Flow Desk',
+    subtitle: 'Customer Support Ticketing System',
+    category: ['React', 'Node.js', 'MongoDB', 'Frontend'],
+    description: 'A customer support ticketing system that allows users to submit support requests, track their status, and communicate with support agents. Built with React for the frontend and Node.js/Express for the backend, with MongoDB for data storage.',
+    tech: ['React', 'Node.js', 'Express.js', 'MongoDB', 'Socket.io', 'CSS Flexbox'],
+    subtitle: 'A customer support ticketing system that allows users to submit support requests, track their status, and communicate with support agents.',
+    challenges: 'Designing a system that efficiently aggregates and displays user activity data while maintaining performance and responsiveness.',
+    solutions: 'Utilized MongoDB aggregation pipelines ($group, $project, $sort) to summarize metrics on the server-side, serving Chart.js with pre-formatted monthly lists.',    
+   
     
-    github: 'https://github.com/sadia-ather/counter-app',
+    github:'https://sadiaather-final-hackathon.vercel.app/',
     demo: '#' ,
     highlights: [
       'Stripe Integration with support for webhook payment status tracking.',
@@ -78,33 +136,63 @@ router.post('/checkout', authMiddleware, async (req, res) => {
   res.json({ id: session.id });
 });`
   },
-  {
-    id: 'smartfit',
-    title: 'SmartFit',
-    subtitle: 'Personal Fitness Dashboard & Calorie Tracker',
-    category: ['React', 'MongoDB', 'Frontend'],
-    description: 'An interactive workout tracker that visualizes fitness achievements, monitors calories consumed vs burned, and schedules training plans.',
-    tech: ['React', 'Chart.js', 'Express.js', 'MongoDB', 'CSS Flexbox'],
-    challenges: 'Aggregating daily workout logs into clean visual insights without overloading client-side rendering.',
-    solutions: 'Utilized MongoDB aggregation pipelines ($group, $project, $sort) to summarize metrics on the server-side, serving Chart.js with pre-formatted monthly lists.',
-    github: 'https://counter-app-beta-eight-30.vercel.app/',
-    demo: '#',
+  {id: 'grosery store',
+    title: 'Grosery Store',
+    subtitle: 'Online Grocery Shopping Platform',
+    category: ['React', 'Node.js', 'MongoDB', 'Frontend'],
+    description: 'An online grocery shopping platform that allows users to browse products, add items to their cart, and complete purchases. Built with React for the frontend and Node.js/Express for the backend, with MongoDB for data storage.',
+    tech: ['React', 'Node.js', 'Express.js', 'MongoDB', 'Socket.io', 'CSS Flexbox'],
+    subtitle: 'An online grocery shopping platform that allows users to browse products, add items to their cart, and complete purchases        .',
+    challenges: 'Designing a system that efficiently aggregates and displays user activity data while maintaining performance and responsiveness.',
+    solutions: 'Utilized MongoDB aggregation pipelines ($group, $project, $sort) to summarize metrics on the server-side, serving Chart.js with pre-formatted monthly lists.',    
+   
+    
+    github:'https://groscery-store.vercel.app',
+    demo: '#' ,
     highlights: [
-      'Dynamic charts powered by Chart.js reacting to user inputs.',
-      'Custom MongoDB queries aggregating fitness trends.',
-      'Mobile-first design with responsive sliding drawers for inputs.'
+      'Stripe Integration with support for webhook payment status tracking.',
+      'Fully responsive UI styled with CSS Grid and modern custom variables.',
+      'Role-based middleware in Express to separate admin order processing.'
     ],
-    schema: `// MongoDB Aggregation Pipeline for Weekly Calories
-Workout.aggregate([
-  { $match: { userId: mongoose.Types.ObjectId(userId), date: { $gte: startDate } } },
-  { $group: {
-      _id: { $dayOfWeek: "$date" },
-      totalCalories: { $sum: "$caloriesBurned" },
-      avgDuration: { $avg: "$durationMinutes" }
-    }
+    schema: `// Express routing for Stripe Checkout Session
+router.post('/checkout', authMiddleware, async (req, res) => {
+  const session = await stripe.checkout.sessions.create({
+    payment_method_types: ['card'],
+    line_items: req.body.items,
+    success_url: '\${process.env.CLIENT_URL}/success?session_id={CHECKOUT_SESSION_ID}',
+    cancel_url: '\${process.env.CLIENT_URL}/cart',
+  });
+  res.json({ id: session.id });
+});`
   },
-  { $sort: { "_id": 1 } }
-])`
+  {id: 'calculator app',
+    title: 'Calculator App',
+    subtitle: 'A simple calculator application built with React that allows users to perform basic arithmetic operations. The app features a clean and intuitive interface, supporting addition, subtraction, multiplication, and division.',
+    category: ['HTML', 'CSS', 'JavaScript', 'Frontend'],
+    description: 'A simple calculator application built with React that allows users to perform basic arithmetic operations. The app features a clean and intuitive interface, supporting addition, subtraction, multiplication, and division.',
+    tech: ['html ','css', 'JavaScript', 'Frontend Development'],
+    subtitle: 'A simple calculator application built with React that allows users to perform basic arithmetic operations. The app features a clean and intuitive interface, supporting addition, subtraction, multiplication, and division.',
+    challenges: 'Designing a system that efficiently displays user activity data while maintaining performance and responsiveness.',
+    solutions: 'Utilized html,css,javascript pipelines ($group, $project, $sort).',    
+   
+    
+    github:'https://sadiaather.github.io/code-alpha-calculator/',
+    demo: '#' ,
+    highlights: [
+      'Stripe Integration with support for webhook payment status tracking.',
+      'Fully responsive UI styled with CSS Grid and modern custom variables.',
+      'Role-based middleware in Express to separate admin order processing.'
+    ],
+    schema: `// Express routing for Stripe Checkout Session
+router.post('/checkout', authMiddleware, async (req, res) => {
+  const session = await stripe.checkout.sessions.create({
+    payment_method_types: ['card'],
+    line_items: req.body.items,
+    success_url: '\${process.env.CLIENT_URL}/success?session_id={CHECKOUT_SESSION_ID}',
+    cancel_url: '\${process.env.CLIENT_URL}/cart',
+  });
+  res.json({ id: session.id });
+});`
   }
 ];
 

@@ -1,16 +1,115 @@
-# React + Vite
+# Sadia Ather | Frontend & MERN Stack Developer
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+**Junior Frontend Developer | React.js Developer | MERN Stack Developer**
 
-Currently, two official plugins are available:
+[![Portfolio](https://img.shields.io/badge/Portfolio-Live%20Website-blue)](https://sadiaather.github.io/personal-portfolio/)
+[![GitHub](https://img.shields.io/badge/GitHub-Profile-black?logo=github)](https://github.com/sadiaather)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## About Me
 
-## React Compiler
+I am an aspiring Frontend and MERN Stack Developer with a foundation in modern web development technologies. I enjoy building responsive, interactive, and user-friendly web applications using React.js, JavaScript, HTML5, and CSS3.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+I have developed personal projects to strengthen my frontend development, API integration, problem-solving, and full-stack development skills. I am eager to learn industry best practices and contribute to collaborative software development projects.
 
-## Expanding the Oxlint configuration
+I am seeking entry-level opportunities as a **Junior Frontend Developer, React.js Developer, or MERN Stack Developer**.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Portfolio Website
+
+This repository contains the source code for my personal developer portfolio, created to showcase my technical skills, web development projects, and professional profile.
+
+**Live Website:** https://sadiaather.github.io/personal-portfolio/
+
+**Source Code:** https://github.com/sadiaather/personal-portfolio
+
+## Key Features
+
+* Personal introduction and developer profile
+* Technical skills showcase
+* Project portfolio
+* Responsive user interface
+* Professional contact and social links
+
+## Technical Skills
+
+### Frontend Development
+
+* HTML5
+* CSS3
+* JavaScript (ES6+)
+* React.js
+* Responsive Web Design
+* Bootstrap
+
+### Backend Development
+
+* Node.js
+* Express.js
+* RESTful API Integration
+* Authentication and Authorization
+
+### Database
+
+* MongoDB
+* Mongoose
+
+### Developer Tools
+
+* Git
+* GitHub
+* Visual Studio Code
+* Vite
+
+*Skills listed above should reflect technologies I have studied or used in projects.*
+
+## Featured Projects
+
+### 1. Personal Portfolio Website
+
+A personal website presenting my developer profile, technical skills, and web development projects.
+
+**Technologies:** React.js, JavaScript, CSS, Vite
+
+* Live Demo: https://sadiaather.github.io/personal-portfolio/
+* Repository: https://github.com/sadiaather/personal-portfolio
+
+### 2. Grocery Store Web Application
+
+A full-stack web development project focused on user authentication, product management, and dashboard functionality.
+
+**Technologies:** React.js, Node.js, Express.js, MongoDB
+
+### 3. JavaScript Calculator
+
+An interactive calculator supporting arithmetic operations with a user-friendly interface.
+
+**Technologies:** HTML5, CSS3, JavaScript
+
+### 4. Responsive Image Gallery
+
+An image gallery project featuring image navigation, interactive effects, and responsive layouts.
+
+**Technologies:** HTML5, CSS3, JavaScript
+
+## Professional Strengths
+
+* Problem-solving and debugging
+* Responsive web development
+* Component-based UI development
+* Understanding of REST APIs
+* Continuous learning and collaboration
+* Writing clean and maintainable code
+
+## Career Objective
+
+To begin my professional career as a Frontend Developer or MERN Stack Developer, apply my technical knowledge to practical software projects, and contribute to building accessible, reliable, and user-focused web applications.
+
+## Connect With Me
+
+* GitHub: https://github.com/sadiaather
+* Portfolio: https://sadiaather.github.io/personal-portfolio/
+* LinkedIn: Add your LinkedIn profile URL
+* Email: Add your professional email address
+
+I am open to suitable junior developer roles, internships, and collaborative web development opportunities.
+
+Thank you for visiting my portfolio!

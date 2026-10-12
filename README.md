@@ -107,8 +107,8 @@ To begin my professional career as a Frontend Developer or MERN Stack Developer,
 
 * GitHub: https://github.com/sadiaather
 * Portfolio: https://sadiaather.github.io/personal-portfolio/
-* LinkedIn: Add your LinkedIn profile URL
-* Email: Add your professional email address
+* LinkedIn: www.linkedin.com/in/sadia-ather
+* Email: sadiaather24@gmail.com
 
 I am open to suitable junior developer roles, internships, and collaborative web development opportunities.
 
